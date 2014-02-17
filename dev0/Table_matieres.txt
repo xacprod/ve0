@@ -1,0 +1,42 @@
+________P0_________
+
+app0 
+=>Sondage tuto django
+
+app1
+=>Correspondance liste ville -> nombre 
+
+
+
+________P1_________
+
+ajx1
+=> search feature
+Ajx3 => Simple Get & Post
+
+________P3_________
+=> Graph avec Jquery
+
+Plot1
+=> 2 graph simples 
+
+Plot2
+=> Tous les types de graphs avec options
+
+Plot3
+=> 1 graph branché à la db
+
+________P4_________
+
+Search engine
+Event hover sur des éléments résultant de la recherche
+
+________P5_________
+
+etudevet
+=> Site Etude vétérinaire
+- Mail
+- ContactForm
+- Search Engine Ajax
+- jqplot Ajax
+- 
