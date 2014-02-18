@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- <link rel="stylesheet" href="style.css" />-->
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+    <!--NB => Dirige depuis settings.py-->
+    <script type="text/javascript" src="{% static "js/ajx1.js" %} "></script>	
+
+    <title>{% block title %}Ajax Search{% endblock %}</title>
+</head>
+
+<body>
+    <div id="sidebar">
+        {% block sidebar %}
+ 
+        {% endblock %}
+    </div>
+
+    <div id="content">
+        {% block content %}
+
+
+        {% endblock %}
+    </div>
+</body>
+</html>

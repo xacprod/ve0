@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- <link rel="stylesheet" href="style.css" />-->
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="excanvas.js"></script><![endif]-->
+    <script language="javascript" type="text/javascript" src="{% static "plot3/js/jquery.jqplot.min.js" %} "></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static "plot3/css/jquery.jqplot.min.css" %}" />
+
+
+
+
+    <title>Plot3 plot3 plot3</title>
+</head>
+
+<body>
+    <p>hello</p>
+    <p>{{ dog_array }}</p>
+    <p>{{ city_array }}</p>
+    <div id="chartdiv" >
+        <div id="chartdiv_1" style="height:400px;width:600px; ">
+        <div id="chartdiv_2" style="height:400px;width:600px; ">
+        <div id="chartdiv_3" style="height:400px;width:600px; ">
+    </div>
+
+
+<!--VOIR http://www.pressinganswer.com/763387/django-jquery-flot-chart-multiple-series
+-->
+
+<!-- *******************Javascript - Data Definition **************** -->
+
+<!-- Var Graph 1 -->
+
+
+
+<script type="text/javascript">
+
+var series = {{ dog_array }};
+//var cities = ["{{ city_array }}"];
+var cities = {{ city_array|safe }};
+console.log(cities);
+
+{% for x in city_array %}
+
+{% endfor %}
+
+
+
+{% for x in dog_array %}
+    var serie = [];
+    {% for i in x %}
+    serie.push({{i}});
+    console.log(serie);
+    {% endfor %}
+{% endfor %}
+
+</script>
+
+<!-- *******************Javascript - Graph 1 Bar Charts   **************** -->
+
+
+<script type="text/javascript" src="{% static "plot3/js/jqplot.barRenderer.min.js" %} "></script>
+<script type="text/javascript" src="{% static "plot3/js/jqplot.categoryAxisRenderer.min.js" %} "></script>
+<script type="text/javascript" src="{% static "plot3/js/jqplot.pointLabels.min.js" %} "></script>
+
+<script type="text/javascript" src="{% static "plot3/js/plot.js" %} "></script>
+
+    
+</body>
+</html>

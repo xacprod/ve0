@@ -1,0 +1,12 @@
+NOTICE.TXT
+
+# Static files
+https://docs.djangoproject.com/fr/1.5/howto/static-files/
+
+Nous allons directement créer un dossier nommé 'static' dans le répertoire de notre application, et créer trois sous dossiers à l'intérieur de celui-ci : 'css', 'img', 'js'.
+
+$ cd myform
+$ mkdir static
+$ cd static/
+$ mkdir css img js
+

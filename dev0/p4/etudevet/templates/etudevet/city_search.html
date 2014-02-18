@@ -1,0 +1,9 @@
+{% if villes_possibles.count > 0 %}
+
+{% for ville in villes_possibles %}
+	<li class="city_found"><a href="{% url 'p4:display' ville.id %}">{{ville.nom_ville}} {{ville.id}} </a> </li>
+{% endfor %}
+{% else %}
+<li>Nothing to show :( </li>
+
+{% endif %}

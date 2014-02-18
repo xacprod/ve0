@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{{ contact_form.as_p  }}
+<!--
+<html>
+  <head>
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" type="text/css" media="all" href="/static/app2/css/base.css" />
+
+  </head>
+  <body>
+    <form action="" method="post" class="niceform">{% csrf_token %}
+      <dl>
+        <dt>{{contact_form.name.label_tag}} :</dt>
+        <dd>{{contact_form.name}}</dd>
+      </dl>
+      <dl>
+        <dt>{{contact_form.message.label_tag}} :</dt>
+        <dd>{{contact_form.message}}</dd>
+      </dl>
+      <dl>
+        <dt>{{contact_form.sender.label_tag}} :</dt>
+        <dd>{{contact_form.sender}}</dd>
+      </dl>
+      <dl>
+        <dt>{{contact_form.cc_myself.label_tag}} :</dt>
+        <dd>{{contact_form.cc_myself}}</dd>
+      </dl>
+      <div style="clear:left;margin-left:200px;">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,686 @@
+<!--<![endif]--><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Medico - Homepage (Main Layout)</title>  
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700" rel="stylesheet" type="text/css">
+	<!-- Smallipop CSS - Tooltips -->
+	<link rel="stylesheet" href="plugins/smallipop/css/contrib/animate.min.css" type="text/css" media="all" title="Screen">
+	<link rel="stylesheet" href="plugins/smallipop/css/jquery.smallipop.css" type="text/css" media="all" title="Screen">
+
+	<!-- Default CSS -->
+	<link rel="stylesheet" href="http://premiumlayers.com/demos/medico/css/normalize.css">
+	<link rel="stylesheet" href="http://premiumlayers.com/demos/medico/css/foundation.css">
+	<link rel="stylesheet" href="http://premiumlayers.com/demos/medico/css/fgx-foundation.css">
+	<!--[if IE 8]>
+		<link rel="stylesheet" href="http://premiumlayers.com/demos/medico/css/ie8-grid-foundation-4.css" />
+		
+	<![endif]-->
+
+	<!-- Font Awesome - Retina Icons -->
+	<link rel="stylesheet" href="plugins/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://premiumlayers.com/demos/medico/css/nivo-slider.css">
+	<link rel="stylesheet" href="http://premiumlayers.com/demos/medico/css/themes/default/default.css">
+	<link rel="stylesheet" href="http://premiumlayers.com/demos/medico/css/datepicker/metallic.css">
+	<!-- Google Fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="http://premiumlayers.com/demos/medico/css/style.css">
+
+	<!-- Included JS Files -->
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/custom.modernizr.js"></script>
+<style type="text/css" charset="utf-8">/* See license.txt for terms of usage */
+/** reset styling **/
+.firebugResetStyles {
+    z-index: 2147483646 !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    border: 0 none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    position: fixed !important;
+    transform: rotate(0deg) !important;
+    transform-origin: 50% 50% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent none !important;
+    pointer-events: none !important;
+    white-space: normal !important;
+}
+
+.firebugBlockBackgroundColor {
+    background-color: transparent !important;
+}
+
+.firebugResetStyles:before, .firebugResetStyles:after {
+    content: "" !important;
+}
+/**actual styling to be modified by firebug theme**/
+.firebugCanvas {
+    display: none !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBox {
+    width: auto !important;
+    position: static !important;
+}
+
+.firebugLayoutBoxOffset {
+    opacity: 0.8 !important;
+    position: fixed !important;
+}
+
+.firebugLayoutLine {
+    opacity: 0.4 !important;
+    background-color: #000000 !important;
+}
+
+.firebugLayoutLineLeft, .firebugLayoutLineRight {
+    width: 1px !important;
+    height: 100% !important;
+}
+
+.firebugLayoutLineTop, .firebugLayoutLineBottom {
+    width: 100% !important;
+    height: 1px !important;
+}
+
+.firebugLayoutLineTop {
+    margin-top: -1px !important;
+    border-top: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineRight {
+    border-right: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineBottom {
+    border-bottom: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineLeft {
+    margin-left: -1px !important;
+    border-left: 1px solid #999999 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBoxParent {
+    border-top: 0 none !important;
+    border-right: 1px dashed #E00 !important;
+    border-bottom: 1px dashed #E00 !important;
+    border-left: 0 none !important;
+    position: fixed !important;
+    width: auto !important;
+}
+
+.firebugRuler{
+    position: absolute !important;
+}
+
+.firebugRulerH {
+    top: -15px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 14px !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%13%88%00%00%00%0E%08%02%00%00%00L%25a%0A%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%04%F8IDATx%DA%EC%DD%D1n%E2%3A%00E%D1%80%F8%FF%EF%E2%AF2%95%D0D4%0E%C1%14%B0%8Fa-%E9%3E%CC%9C%87n%B9%81%A6W0%1C%A6i%9A%E7y%0As8%1CT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AATE9%FE%FCw%3E%9F%AF%2B%2F%BA%97%FDT%1D~K(%5C%9D%D5%EA%1B%5C%86%B5%A9%BDU%B5y%80%ED%AB*%03%FAV9%AB%E1%CEj%E7%82%EF%FB%18%BC%AEJ8%AB%FA'%D2%BEU9%D7U%ECc0%E1%A2r%5DynwVi%CFW%7F%BB%17%7Dy%EACU%CD%0E%F0%FA%3BX%FEbV%FEM%9B%2B%AD%BE%AA%E5%95v%AB%AA%E3E5%DCu%15rV9%07%B5%7F%B5w%FCm%BA%BE%AA%FBY%3D%14%F0%EE%C7%60%0EU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5JU%88%D3%F5%1F%AE%DF%3B%1B%F2%3E%DAUCNa%F92%D02%AC%7Dm%F9%3A%D4%F2%8B6%AE*%BF%5C%C2Ym~9g5%D0Y%95%17%7C%C8c%B0%7C%18%26%9CU%CD%13i%F7%AA%90%B3Z%7D%95%B4%C7%60%E6E%B5%BC%05%B4%FBY%95U%9E%DB%FD%1C%FC%E0%9F%83%7F%BE%17%7DkjMU%E3%03%AC%7CWj%DF%83%9An%BCG%AE%F1%95%96yQ%0Dq%5Dy%00%3Et%B5'%FC6%5DS%95pV%95%01%81%FF'%07%00%00%00%00%00%00%00%00%00%F8x%C7%F0%BE%9COp%5D%C9%7C%AD%E7%E6%EBV%FB%1E%E0(%07%E5%AC%C6%3A%ABi%9C%8F%C6%0E9%AB%C0'%D2%8E%9F%F99%D0E%B5%99%14%F5%0D%CD%7F%24%C6%DEH%B8%E9rV%DFs%DB%D0%F7%00k%FE%1D%84%84%83J%B8%E3%BA%FB%EF%20%84%1C%D7%AD%B0%8E%D7U%C8Y%05%1E%D4t%EF%AD%95Q%BF8w%BF%E9%0A%BF%EB%03%00%00%00%00%00%00%00%00%00%B8vJ%8E%BB%F5%B1u%8Cx%80%E1o%5E%CA9%AB%CB%CB%8E%03%DF%1D%B7T%25%9C%D5(%EFJM8%AB%CC'%D2%B2*%A4s%E7c6%FB%3E%FA%A2%1E%80~%0E%3E%DA%10x%5D%95Uig%15u%15%ED%7C%14%B6%87%A1%3B%FCo8%A8%D8o%D3%ADO%01%EDx%83%1A~%1B%9FpP%A3%DC%C6'%9C%95gK%00%00%00%00%00%00%00%00%00%20%D9%C9%11%D0%C0%40%AF%3F%EE%EE%92%94%D6%16X%B5%BCMH%15%2F%BF%D4%A7%C87%F1%8E%F2%81%AE%AAvzr%DA2%ABV%17%7C%E63%83%E7I%DC%C6%0Bs%1B%EF6%1E%00%00%00%00%00%00%00%00%00%80cr%9CW%FF%7F%C6%01%0E%F1%CE%A5%84%B3%CA%BC%E0%CB%AA%84%CE%F9%BF)%EC%13%08WU%AE%AB%B1%AE%2BO%EC%8E%CBYe%FE%8CN%ABr%5Dy%60~%CFA%0D%F4%AE%D4%BE%C75%CA%EDVB%EA(%B7%F1%09g%E5%D9%12%00%00%00%00%00%00%00%00%00H%F6%EB%13S%E7y%5E%5E%FB%98%F0%22%D1%B2'%A7%F0%92%B1%BC%24z3%AC%7Dm%60%D5%92%B4%7CEUO%5E%F0%AA*%3BU%B9%AE%3E%A0j%94%07%A0%C7%A0%AB%FD%B5%3F%A0%F7%03T%3Dy%D7%F7%D6%D4%C0%AAU%D2%E6%DFt%3F%A8%CC%AA%F2%86%B9%D7%F5%1F%18%E6%01%F8%CC%D5%9E%F0%F3z%88%AA%90%EF%20%00%00%00%00%00%00%00%00%00%C0%A6%D3%EA%CFi%AFb%2C%7BB%0A%2B%C3%1A%D7%06V%D5%07%A8r%5D%3D%D9%A6%CAu%F5%25%CF%A2%99%97zNX%60%95%AB%5DUZ%D5%FBR%03%AB%1C%D4k%9F%3F%BB%5C%FF%81a%AE%AB'%7F%F3%EA%FE%F3z%94%AA%D8%DF%5B%01%00%00%00%00%00%00%00%00%00%8E%FB%F3%F2%B1%1B%8DWU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*UiU%C7%BBe%E7%F3%B9%CB%AAJ%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5*%AAj%FD%C6%D4%5Eo%90%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5%86%AF%1B%9F%98%DA%EBm%BBV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%AD%D6%E4%F58%01%00%00%00%00%00%00%00%00%00%00%00%00%00%40%85%7F%02%0C%008%C2%D0H%16j%8FX%00%00%00%00IEND%AEB%60%82") repeat-x !important;
+    border-top: 1px solid #BBBBBB !important;
+    border-right: 1px dashed #BBBBBB !important;
+    border-bottom: 1px solid #000000 !important;
+}
+
+.firebugRulerV {
+    top: 0 !important;
+    left: -15px !important;
+    width: 14px !important;
+    height: 100% !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%0E%00%00%13%88%08%02%00%00%00%0E%F5%CB%10%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%06~IDATx%DA%EC%DD%D1v%A20%14%40Qt%F1%FF%FF%E4%97%D9%07%3BT%19%92%DC%40(%90%EEy%9A5%CB%B6%E8%F6%9Ac%A4%CC0%84%FF%DC%9E%CF%E7%E3%F1%88%DE4%F8%5D%C7%9F%2F%BA%DD%5E%7FI%7D%F18%DDn%BA%C5%FB%DF%97%BFk%F2%10%FF%FD%B4%F2M%A7%FB%FD%FD%B3%22%07p%8F%3F%AE%E3%F4S%8A%8F%40%EEq%9D%BE8D%F0%0EY%A1Uq%B7%EA%1F%81%88V%E8X%3F%B4%CEy%B7h%D1%A2E%EBohU%FC%D9%AF2fO%8BBeD%BE%F7X%0C%97%A4%D6b7%2Ck%A5%12%E3%9B%60v%B7r%C7%1AI%8C%BD%2B%23r%00c0%B2v%9B%AD%CA%26%0C%1Ek%05A%FD%93%D0%2B%A1u%8B%16-%95q%5Ce%DCSO%8E%E4M%23%8B%F7%C2%FE%40%BB%BD%8C%FC%8A%B5V%EBu%40%F9%3B%A72%FA%AE%8C%D4%01%CC%B5%DA%13%9CB%AB%E2I%18%24%B0n%A9%0CZ*Ce%9C%A22%8E%D8NJ%1E%EB%FF%8F%AE%CAP%19*%C3%BAEKe%AC%D1%AAX%8C*%DEH%8F%C5W%A1e%AD%D4%B7%5C%5B%19%C5%DB%0D%EF%9F%19%1D%7B%5E%86%BD%0C%95%A12%AC%5B*%83%96%CAP%19%F62T%86%CAP%19*%83%96%CA%B8Xe%BC%FE)T%19%A1%17xg%7F%DA%CBP%19*%C3%BA%A52T%86%CAP%19%F62T%86%CA%B0n%A9%0CZ%1DV%C6%3D%F3%FCH%DE%B4%B8~%7F%5CZc%F1%D6%1F%AF%84%F9%0F6%E6%EBVt9%0E~%BEr%AF%23%B0%97%A12T%86%CAP%19%B4T%86%CA%B8Re%D8%CBP%19*%C3%BA%A52huX%19%AE%CA%E5%BC%0C%7B%19*CeX%B7h%A9%0C%95%E1%BC%0C%7B%19*CeX%B7T%06%AD%CB%5E%95%2B%BF.%8F%C5%97%D5%E4%7B%EE%82%D6%FB%CF-%9C%FD%B9%CF%3By%7B%19%F62T%86%CA%B0n%D1R%19*%A3%D3%CA%B0%97%A12T%86uKe%D0%EA%B02*%3F1%99%5DB%2B%A4%B5%F8%3A%7C%BA%2B%8Co%7D%5C%EDe%A8%0C%95a%DDR%19%B4T%C66%82fA%B2%ED%DA%9FC%FC%17GZ%06%C9%E1%B3%E5%2C%1A%9FoiB%EB%96%CA%A0%D5qe4%7B%7D%FD%85%F7%5B%ED_%E0s%07%F0k%951%ECr%0D%B5C%D7-g%D1%A8%0C%EB%96%CA%A0%A52T%C6)*%C3%5E%86%CAP%19%D6-%95A%EB*%95q%F8%BB%E3%F9%AB%F6%E21%ACZ%B7%22%B7%9B%3F%02%85%CB%A2%5B%B7%BA%5E%B7%9C%97%E1%BC%0C%EB%16-%95%A12z%AC%0C%BFc%A22T%86uKe%D0%EA%B02V%DD%AD%8A%2B%8CWhe%5E%AF%CF%F5%3B%26%CE%CBh%5C%19%CE%CB%B0%F3%A4%095%A1%CAP%19*Ce%A8%0C%3BO*Ce%A8%0C%95%A12%3A%AD%8C%0A%82%7B%F0v%1F%2FD%A9%5B%9F%EE%EA%26%AF%03%CA%DF9%7B%19*Ce%A8%0C%95%A12T%86%CA%B8Ze%D8%CBP%19*Ce%A8%0C%95%D1ae%EC%F7%89I%E1%B4%D7M%D7P%8BjU%5C%BB%3E%F2%20%D8%CBP%19*Ce%A8%0C%95%A12T%C6%D5*%C3%5E%86%CAP%19*Ce%B4O%07%7B%F0W%7Bw%1C%7C%1A%8C%B3%3B%D1%EE%AA%5C%D6-%EBV%83%80%5E%D0%CA%10%5CU%2BD%E07YU%86%CAP%19*%E3%9A%95%91%D9%A0%C8%AD%5B%EDv%9E%82%FFKOee%E4%8FUe%A8%0C%95%A12T%C6%1F%A9%8C%C8%3D%5B%A5%15%FD%14%22r%E7B%9F%17l%F8%BF%ED%EAf%2B%7F%CF%ECe%D8%CBP%19*Ce%A8%0C%95%E1%93~%7B%19%F62T%86%CAP%19*Ce%A8%0C%E7%13%DA%CBP%19*Ce%A8%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4%AE%A4%F5%25%C0%00%DE%BF%5C'%0F%DA%B8q%00%00%00%00IEND%AEB%60%82") repeat-y !important;
+    border-left: 1px solid #BBBBBB !important;
+    border-right: 1px solid #000000 !important;
+    border-bottom: 1px dashed #BBBBBB !important;
+}
+
+.overflowRulerX > .firebugRulerV {
+    left: 0 !important;
+}
+
+.overflowRulerY > .firebugRulerH {
+    top: 0 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.fbProxyElement {
+    position: fixed !important;
+    pointer-events: auto !important;
+}
+</style></head>
+<body>
+
+<!-- Begin Main Wrapper -->
+<div class="main-wrapper">
+	<!-- Main Navigation -->  
+	<header class="row main-navigation">
+		<div class="large-3 columns">	
+			<a href="index.html" id="logo"><img src="http://premiumlayers.com/demos/medico/images/logo.png" alt="Medico Logo"></a>
+		</div>
+		<div class="large-9 columns">			
+			<nav class="top-bar">
+				<ul class="title-area">
+				  <!-- Title Area -->
+				  <li class="name"></li>
+				  <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+				  <li class="toggle-topbar menu-icon"><a href="#"><span>Main Menu</span></a></li>
+				</ul>
+
+				
+			<section class="top-bar-section">
+					<!-- Left Nav Section -->
+					  <ul class="right">
+						<li class="has-dropdown not-click"><a href="#" class="active">Home</a>
+						  <ul class="dropdown"><li class="title back js-generated"><h5><a href="#">« Back</a></h5></li>
+							<li><a href="index2.html">Variation 2</a></li>
+							<li><a href="index3.html">Variation 3</a></li>
+							<li><a href="index4.html">Variation 4</a></li>
+							<li><a href="index5.html">Variation 5</a></li>
+							<li><a href="index6.html">Variation 6</a></li>
+						  </ul>
+						</li>
+						<li class="has-dropdown not-click"><a href="#">Features</a>
+						  <ul class="dropdown"><li class="title back js-generated"><h5><a href="#">« Back</a></h5></li>
+                          	<li><a href="about.html">About page</a></li>
+							<li><a href="grid.html">Grid</a></li>
+							<li><a href="navigation.html">Navigation</a></li>
+							<li><a href="buttons.html">Buttons</a></li>
+							<li><a href="forms.html">Forms</a></li>
+							<li><a href="typography.html">Typography</a></li>
+							<li><a href="orbit.html">Orbit - Foundation Slider</a></li>
+							<li><a href="clearing.html">Clearing -  Responsive Lightboxes</a></li>
+							<li><a href="dropdown.html">Dropdown</a></li>
+							<li><a href="joyride.html">Joyride</a></li>
+							<li><a href="magellan.html">Magellan</a></li>
+							<li><a href="reveal.html">Reveal - Modal dialogs / pop-up windows</a></li>
+							<li><a href="section.html">Section - Accordion, Tabs &amp; Vertical Nav</a></li>
+							<li><a href="tooltips.html">Info tooltips</a></li>
+						  </ul>
+						</li>
+						
+						<li class="has-dropdown not-click"><a href="#">Shortcodes</a>
+						  <ul class="dropdown"><li class="title back js-generated"><h5><a href="#">« Back</a></h5></li>
+                          	<li><a href="shortcodes.html">Main elements</a></li>
+							<li><a href="alert-boxes.html">Alert Boxes</a></li>
+							<li><a href="panels.html">Panels</a></li>
+							<li><a href="pricing-tables.html">Pricing Tables</a></li>
+							<li><a href="bars.html">Progress Bars</a></li>
+							<li><a href="tables.html">Tables</a></li>
+							<li><a href="thumbnails.html">Thumbnails</a></li>
+							<li><a href="flex-video.html">Flex Video</a></li>
+							
+						  </ul>
+						</li>                    
+						<li class="has-dropdown not-click"><a href="#">Add-ons</a>
+						  <ul class="dropdown"><li class="title back js-generated"><h5><a href="#">« Back</a></h5></li>
+							<li><a href="icons.html">Retina Icons - Font Awesome</a></li>
+						  </ul>
+						</li>
+						<li class="has-dropdown not-click"><a href="#">Portfolio</a>                                       
+						  <ul class="dropdown"><li class="title back js-generated"><h5><a href="#">« Back</a></h5></li> 
+                          		<li><a href="portfolio.html">Portfolio 4 Columns</a> </li>                       
+								<li><a href="portfolio2.html">Portfolio 3 Columns</a></li>
+								<li><a href="portfolio-single.html">Single item</a></li>
+							</ul>
+						</li>
+						<li class="has-dropdown not-click"><a href="#">Blog</a>                    
+						  <ul class="dropdown"><li class="title back js-generated"><h5><a href="#">« Back</a></h5></li>
+							<li><a href="blog.html">1 Column, Default</a></li>
+							<li><a href="blogalt.html">1 Column, Alternative</a></li>
+							<li><a href="blog-2column.html">2 Columns</a></li>
+							<li><a href="blog-3column-no-sidebar.html">3 Columns, No sidebar</a></li>
+							<li><a href="blog-4column-no-sidebar.html">4 Columns, No sidebar</a></li>
+							<li><a href="blog-single.html">Blog Inner</a></li>
+						  </ul>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+					  </ul>
+					  <!-- End Left Nav Section -->					 
+				</section></nav>
+		</div>
+	</header>
+	<!-- Start Main Slider -->
+</div>
+
+<div class="slider-wrapper theme-default">
+    <div id="slider" class="nivoSlider">
+		<img style="width: 1349px; visibility: hidden; display: inline-block;" src="http://premiumlayers.com/demos/medico/images/demo/slider/1.jpg" data-thumb="http://premiumlayers.com/demos/medico/images/demo/news/1.jpg" alt="" title="#caption1">
+		<a style="display: block;" class="nivo-imageLink" href="http://www.google.com"><img style="width: 1349px; visibility: hidden; display: inline-block;" src="http://premiumlayers.com/demos/medico/images/demo/slider/2.jpg" data-thumb="http://premiumlayers.com/demos/medico/images/demo/news/2.jpg" alt="" title="#caption2"></a>
+		<img style="width: 1349px; visibility: hidden; display: inline-block;" src="http://premiumlayers.com/demos/medico/images/demo/slider/3.jpg" data-thumb="http://premiumlayers.com/demos/medico/images/demo/news/3.jpg" alt="" title="#caption3">
+	<img style="display: inline-block; height: 485px;" src="http://premiumlayers.com/demos/medico/images/demo/slider/2.jpg" class="nivo-main-image"><div style="display: block;" class="nivo-caption">
+		<p class="nivotitle v1">Dynamic contact form</p> 
+		<p class="nivotitle v2">Documentation</p> 
+		<p class="nivotitle v3">Easy to use and abuse</p> 
+	</div><div class="nivo-directionNav"><a class="nivo-prevNav">Prev</a><a class="nivo-nextNav">Next</a></div><div style="left: 0px; width: 90px; height: 485px; opacity: 1; overflow: hidden; bottom: 0px;" class="nivo-slice" name="0"><img src="http://premiumlayers.com/demos/medico/images/demo/slider/2.jpg" style="position:absolute; width:1349px; height:auto; display:block !important; top:0; left:-0px;"></div><div style="left: 90px; width: 90px; height: 485px; opacity: 1; overflow: hidden; bottom: 0px;" class="nivo-slice" name="1"><img src="http://premiumlayers.com/demos/medico/images/demo/slider/2.jpg" style="position:absolute; width:1349px; height:auto; display:block !important; top:0; left:-90px;"></div><div style="left: 180px; width: 90px; height: 485px; opacity: 1; overflow: hidden; bottom: 0px;" class="nivo-slice" name="2"><img src="http://premiumlayers.com/demos/medico/images/demo/slider/2.jpg" style="position:absolute; width:1349px; height:auto; display:block !important; top:0; left:-180px;"></div><div style="left: 270px; width: 90px; height: 485px; opacity: 1; overflow: hidden; bottom: 0px;" class="nivo-slice" name="3"><img src="http://premiumlayers.com/demos/medico/images/demo/slider/2.jpg" style="position:absolute; width:1349px; height:auto; display:block !important; top:0; left:-270px;"></div><div style="left: 360px; width: 90px; height: 485px; opacity: 1; overflow: hidden; bottom: 0px;" class="nivo-slice" name="4"><img src="http://premiumlayers.com/demos/medico/images/demo/slider/2.jpg" style="position:absolute; width:1349px; height:auto; display:block !important; top:0; left:-360px;"></div><div style="left: 450px; width: 90px; height: 485px; opacity: 1; overflow: hidden; bottom: 0px;" class="nivo-slice" name="5"><img src="http://premiumlayers.com/demos/medico/images/demo/slider/2.jpg" style="position:absolute; width:1349px; height:auto; display:block !important; top:0; left:-450px;"></div><div style="left: 540px; width: 90px; height: 485px; opacity: 1; overflow: hidden; bottom: 0px;" class="nivo-slice" name="6"><img src="http://premiumlayers.com/demos/medico/images/demo/slider/2.jpg" style="position:absolute; width:1349px; height:auto; display:block !important; top:0; left:-540px;"></div><div style="left: 630px; width: 90px; height: 485px; opacity: 1; overflow: hidden; bottom: 0px;" class="nivo-slice" name="7"><img src="http://premiumlayers.com/demos/medico/images/demo/slider/2.jpg" style="position:absolute; width:1349px; height:auto; display:block !important; top:0; left:-630px;"></div><div style="left: 720px; width: 90px; height: 485px; opacity: 1; overflow: hidden; bottom: 0px;" class="nivo-slice" name="8"><img src="http://premiumlayers.com/demos/medico/images/demo/slider/2.jpg" style="position:absolute; width:1349px; height:auto; display:block !important; top:0; left:-720px;"></div><div style="left: 810px; width: 90px; height: 485px; opacity: 1; overflow: hidden; bottom: 0px;" class="nivo-slice" name="9"><img src="http://premiumlayers.com/demos/medico/images/demo/slider/2.jpg" style="position:absolute; width:1349px; height:auto; display:block !important; top:0; left:-810px;"></div><div style="left: 900px; width: 90px; height: 485px; opacity: 1; overflow: hidden; bottom: 0px;" class="nivo-slice" name="10"><img src="http://premiumlayers.com/demos/medico/images/demo/slider/2.jpg" style="position:absolute; width:1349px; height:auto; display:block !important; top:0; left:-900px;"></div><div style="left: 990px; width: 90px; height: 485px; opacity: 1; overflow: hidden; bottom: 0px;" class="nivo-slice" name="11"><img src="http://premiumlayers.com/demos/medico/images/demo/slider/2.jpg" style="position:absolute; width:1349px; height:auto; display:block !important; top:0; left:-990px;"></div><div style="left: 1080px; width: 90px; height: 485px; opacity: 1; overflow: hidden; bottom: 0px;" class="nivo-slice" name="12"><img src="http://premiumlayers.com/demos/medico/images/demo/slider/2.jpg" style="position:absolute; width:1349px; height:auto; display:block !important; top:0; left:-1080px;"></div><div style="left: 1170px; width: 90px; height: 485px; opacity: 1; overflow: hidden; bottom: 0px;" class="nivo-slice" name="13"><img src="http://premiumlayers.com/demos/medico/images/demo/slider/2.jpg" style="position:absolute; width:1349px; height:auto; display:block !important; top:0; left:-1170px;"></div><div style="left: 1260px; width: 89px; height: 485px; opacity: 1; overflow: hidden; bottom: 0px;" class="nivo-slice" name="14"><img src="http://premiumlayers.com/demos/medico/images/demo/slider/2.jpg" style="position:absolute; width:1349px; height:auto; display:block !important; top:0; left:-1260px;"></div></div>
+	<div id="caption1" class="nivo-html-caption">
+		<p class="nivotitle v1">Medicine definition</p> 
+		<p class="nivotitle v2">Applied science or practice of the diagnosis, treatment, and prevention of disease</p> 
+		<p class="nivotitle v3">Built on foundation 4</p> 
+	</div>
+	<div id="caption2" class="nivo-html-caption">
+		<p class="nivotitle v1">Dynamic contact form</p> 
+		<p class="nivotitle v2">Documentation</p> 
+		<p class="nivotitle v3">Easy to use and abuse</p> 
+	</div>
+	<div id="caption3" class="nivo-html-caption">
+		<p class="nivotitle v1">Fully responsive</p> 
+		<p class="nivotitle v2">Lots of shortcodes</p> 
+		<p class="nivotitle v3">Built on foundation 4</p> 
+	</div>
+	
+    <div class="main-wrapper app-wrapper">
+    	
+		<div class="appointment-block grey-bg">            
+            <div class="row">
+                <div class="large-3 columns red">
+                    <p>Make an Appoinment</p>
+                    &nbsp;<!-- Put appointemnt label here -->
+                </div>
+                <div class="large-9 columns">
+                    <form method="POST" action="#" id="appointment-contact-form">
+                        <div class="row">
+                            <div class="large-3 columns">
+                                <input placeholder="Full Name" name="name" type="text">
+                                <input placeholder="Phone Nomber" name="name" type="text">
+                            </div>
+                            <div class="large-3 columns">
+                                <input placeholder="E-mail Address" name="name" type="text">
+                                <span style="display: block; position: relative; float: none; top: auto; right: auto; bottom: auto; left: auto;" class="Zebra_DatePicker_Icon_Wrapper"><input style="position: relative; top: auto; right: auto; bottom: auto; left: auto;" readonly="readonly" class="datepicker" placeholder="Appointment Date" name="name" type="text"><button style="top: 12px; left: 178px;" type="button" class="Zebra_DatePicker_Icon Zebra_DatePicker_Icon_Inside">Pick a date</button></span>
+                            </div>
+                            <div class="large-3 columns">
+                                <textarea cols="10" rows="15" name="message" placeholder="Message"></textarea>
+                            </div>
+                            <div class="large-3 columns">
+                                <input class="blue button radius" value="Make Appointment" type="submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>		
+            </div>
+		</div>   
+		<div class="clearfix"></div>
+	</div>			
+</div>	
+<!-- End Main Slider -->
+
+	<!-- Main Content -->
+<div class="main-wrapper">
+   	<div class="row main-content">
+        <div class="large-12 columns">
+			<div class="row">		
+				<div class="large-3 columns">
+					<div class="featured-block">
+						<a href="#">
+							<span class="icon-sitemap fblock-icon"></span>
+							<div class="fblock-content">
+								<p class="fblock-main">Exceptional <strong>Service</strong></p>
+								<p class="fblock-sub">Learn more</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="large-3 columns">
+					<div class="featured-block">
+						<a href="#">
+							<span class="icon-lightbulb fblock-icon"></span>
+							<div class="fblock-content">
+								<p class="fblock-main">Amazing <strong>Design</strong></p>
+								<p class="fblock-sub">Learn more</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="large-3 columns">
+					<div class="featured-block">
+						<a href="#">
+							<span class="icon-laptop fblock-icon"></span>
+							<div class="fblock-content">
+								<p class="fblock-main">Fully <strong>Responsive</strong></p>
+								<p class="fblock-sub">Learn more</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="large-3 columns">
+					<div class="featured-block">
+						<a href="#">
+							<span class="icon-cogs fblock-icon"></span>
+							<div class="fblock-content">
+								<p class="fblock-main">Easy <strong>Customization</strong></p>
+								<p class="fblock-sub">Learn more</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="large-12 columns">	
+			<div class="title-block">
+				<h3>Our Doctors</h3>
+				<div class="divider"><span></span></div>  
+			</div>		
+			<div class="work_slide">
+				<div style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 1134px; height: 310px; margin: 0px 0px 16.25px; overflow: hidden;" class="caroufredsel_wrapper"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 5670px; height: 310px;" id="work_slide">
+					<li>
+						<div class="view view-two"> 
+							<img src="http://premiumlayers.com/demos/medico/images/demo/doctors/1.jpg" alt=""> 
+							<div class="mask"> 
+								<h3>Specialties</h3>
+								<p>Colon and rectal surgery, Dental surgery, Oral and maxillofacial surgery.</p>
+								<a class="button btn-icon icon-2" href="portfolio-single.html"><i class="icon-external-link icon-large"></i></a> 
+							</div>
+						</div>
+						<div class="doctor-name">John Smith</div>
+					</li>
+					<li>
+						<div class="view view-two"> 
+							<img src="http://premiumlayers.com/demos/medico/images/demo/doctors/2.jpg" alt=""> 
+							<div class="mask"> 
+								<h3>Specialties</h3>
+								<p>Pediatric surgery, Plastic surgery, Podiatric surgery.</p>
+								<a class="button btn-icon icon-2" href="#"><i class="icon-external-link icon-large"></i></a> 
+							</div>
+						</div>
+						<div class="doctor-name">Carter Smith</div>
+					</li>
+					 <li>
+						<div class="view view-two"> 
+							<img src="http://premiumlayers.com/demos/medico/images/demo/doctors/3.jpg" alt=""> 
+							<div class="mask"> 
+								<h3>Specialties</h3>
+								<p>Trauma surgery, Thoracic surgery, Urology, Veterinary surgery.</p>
+								<a class="button btn-icon icon-2" href="#"><i class="icon-external-link icon-large"></i></a> 
+							</div>
+						</div>
+						<div class="doctor-name">M.D. House</div>
+					</li>
+					<li>
+						<div class="view view-two"> 
+							<img src="http://premiumlayers.com/demos/medico/images/demo/doctors/4.jpg" alt=""> 
+							<div class="mask"> 
+								<h3>Specialties</h3>
+								<p>All in one master, the genius, the man behind the curtain.</p>
+								<a class="button btn-icon icon-2" href="#"><i class="icon-external-link icon-large"></i></a> 
+							</div>
+						</div>
+						<div class="doctor-name">Lonely Shepherd</div>
+					</li>
+					 <li>
+						<div class="view view-two"> 
+							<img src="http://premiumlayers.com/demos/medico/images/demo/doctors/5.jpg" alt=""> 
+							<div class="mask"> 
+								<h3>Specialties</h3>
+								<p>Aenean eget mauris nibh, eu pellentesque ipsum. The lorem is totally site amet.</p>
+								<a class="button btn-icon icon-2" href="#"><i class="icon-external-link icon-large"></i></a> 
+							</div>
+						</div>
+						<div class="doctor-name">Lisa Minelly</div>
+					</li>
+					 <li>
+						<div class="view view-two"> 
+							<img src="http://premiumlayers.com/demos/medico/images/demo/doctors/6.jpg" alt=""> 
+							<div class="mask"> 
+								<h3>Specialties</h3>
+								<p>Aenean eget mauris nibh, eu pellentesque ipsum. The lorem is totally site amet.</p>
+								<a class="button btn-icon" href="#"><i class="icon-zoom-in icon-large"></i></a>
+							</div>
+						</div>
+						<div class="doctor-name">Enzo Ferrari</div>
+					</li>
+				</ul></div>
+		
+				<div class="clearfix"></div>
+				<a style="display: block;" class="prev" id="slide_prev" href="#"><img src="http://premiumlayers.com/demos/medico/images/arrow_left.png" alt="Previous"></a>
+				<a style="display: block;" class="next" id="slide_next" href="#"><img src="http://premiumlayers.com/demos/medico/images/arrow_right.png" alt="Next"></a>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+        <div class="large-12 columns">
+			 <div class="title-block">					
+				<h3>Latest News</h3>
+				<div class="clearfix"></div>						
+			</div>	
+        	<div class="divider"><span></span></div>  	                             
+            <div class="row">
+                <article class="large-3 columns">                           
+                    <div class="mod_con_img">
+                     	<img src="http://premiumlayers.com/demos/medico/images/demo/news/1.jpg" alt=""> 
+                        <ul class="meta">
+                            <li><i class="icon-time"></i>Apr 22, 2013</li>
+                        </ul>
+                    </div>
+                    <div class="mod_con_text">
+                        <h5>Will 2013 be the year of the smartwatch?</h5>
+                        <div class="divline"><span></span></div>  	  	
+                        <p>Lorem quis bibendum auctor, nisi elit consequat ipsum, nec </p>
+                        <a href="#" class="button">Read More</a>
+                    </div>
+                </article>
+                <article class="large-3 columns">                          
+                    <div class="mod_con_img">
+                        	<img src="http://premiumlayers.com/demos/medico/images/demo/news/2.jpg" alt=""> 
+                        <ul class="meta">
+                            <li><i class="icon-time"></i>Apr 22, 2013</li>
+                        </ul>
+                    </div>
+
+                    <div class="mod_con_text">
+                        <h5>Will 2013 be the year of the smartwatch?</h5>
+                        <div class="divline"><span></span></div> 
+                        <p>Lorem quis bibendum auctor, nisi elit consequat ipsum, nec </p>
+                        <a href="#" class="button">Read More</a>
+                    </div>
+                </article>
+                <article class="large-3 columns">
+                    <div class="mod_con_img">
+                      	<img src="http://premiumlayers.com/demos/medico/images/demo/news/3.jpg" alt=""> 
+                        <ul class="meta">
+                            <li><i class="icon-time"></i>Apr 22, 2013</li>
+                        </ul>
+                    </div>
+
+                    <div class="mod_con_text">
+                        <h5>Will 2013 be the year of the smartwatch?</h5>
+                        <div class="divline"><span></span></div> 
+                        <p>Lorem quis bibendum auctor, nisi elit consequat ipsum, nec </p>
+                        <a href="#" class="button">Read More</a>
+                    </div>
+                </article>
+                <article class="large-3 columns">
+                    <div class="mod_con_img">
+                       	<img src="http://premiumlayers.com/demos/medico/images/demo/news/4.jpg" alt=""> 
+                        <ul class="meta">
+                            <li><i class="icon-time"></i>Apr 22, 2013</li>
+                        </ul>
+                    </div>
+                    <div class="mod_con_text">
+                        <h5>Will 2013 be the year of the smartwatch?</h5>
+                        <div class="divline"><span></span></div> 
+                        <p>Lorem quis bibendum auctor, nisi elit consequat ipsum, nec </p>
+                        <a href="#" class="button">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+	</div>
+</div>
+<footer class="footer_wrapper">
+	<div class="row footer-part">
+		<div class="large-12 columns">
+			<div class="row">
+				<div class="large-3 columns">
+					<h4 class="footer-title">About Us</h4>
+					<div class="divdott"></div>
+					<img class="botlogo" src="http://premiumlayers.com/demos/medico/images/botlogo.png" alt="">
+					<div class="footer_part_content">
+						<p>Medico Theme Bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate</p>
+					</div>
+				</div>
+				<div class="large-3 columns">
+					<h4 class="footer-title">Latest Posts</h4>
+					<div class="divdott"></div>
+					<div class="footer_part_content">
+						<ul class="latest-posts">
+							<li>
+								Update: WordPress Theme Submission Requirements
+								<div class="divline"><span></span></div>
+							</li>
+							<li>
+								Envato's Most Wanted - $5,000 Reward for the First 15 Hosting Templates
+								<div class="divline"><span></span></div>
+							</li>
+							<li>
+								Does a well designed thumbnail increase your sales?
+								<div class="divline"><span></span></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+
+				<div class="large-3 columns">
+					<h4 class="footer-title">Contact info</h4>
+					<div class="divdott"></div>
+					<div class="footer_part_content">
+						<p>Medico Bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id </p>
+						<ul class="about-info">
+							<li><i class="icon-home"></i><span>lorem ipsum street</span></li>
+							<li><i class="icon-phone"></i><span>+399 (500) 321 9548</span></li>
+							<li><i class="icon-envelope"></i><a href="mailto:info@Medico.com">info@Medico.com</a></li>
+						</ul>
+						<ul class="social-icons">
+						<li><a href="#"><i class="icon-pinterest"></i></a></li>
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
+						<li><a href="#"><i class="icon-facebook"></i></a></li>
+					</ul>
+					</div>
+				</div>
+					
+				<div class="large-3 columns"> 
+					<h4 class="footer-title">Quick Contact</h4>
+					<div class="divdott"></div>
+					<form method="POST" action="#" id="footer-contact-form">
+						<div class="footer_part_content">
+							<div class="row">
+								<div class="large-6 columns">
+									<input placeholder="Name" name="name" type="text">
+								</div>
+								<div class="large-6 columns">
+									<input placeholder="E-mail" name="email" type="text">
+								</div>
+								<div class="large-12 columns">
+									<textarea cols="10" rows="15" name="message" placeholder="Message"></textarea>
+								</div>
+								<div class="large-12 columns text-right">
+									<input class="button" value="Send" name="send" type="submit">
+								</div>	
+							</div>
+						</div>
+					</form>
+				</div> 
+			</div>
+		</div>
+	</div>
+	
+	<div class="privacy footer_bottom">
+		<div class="footer-part">
+			<div class="row">
+				<div class="large-10 columns copyright">
+					<p>© 2013 Medico Theme, All Rights Reserved.</p>
+				</div>
+				<div class="large-2 columns">
+					<div id="back-to-top"><a href="#top"></a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- carouFredSel plugin -->
+<script src="plugins/carouFredSel/jquery.carouFredSel-6.2.0-packed.js"></script>
+<script src="plugins/carouFredSel/helper-plugins/jquery.touchSwipe.min.js"></script>
+
+<!-- Scripts Initialize -->
+<script type="text/javascript" src="js/app-head-calls.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>	
+<script type="text/javascript" src="js/datepicker.js"></script>	
+<script src="js/foundation.min.js"></script>
+<script>$(document).foundation();</script>  
+<!-- Smallipop JS - Tooltips -->
+<script type="text/javascript" src="plugins/smallipop/lib/contrib/prettify.js"></script>
+<script type="text/javascript" src="plugins/smallipop/lib/jquery.smallipop.js"></script>
+<script>
+/*jshint jquery:true */
+jQuery.noConflict();
+
+jQuery(window).load(function() {
+	"use strict";
+	jQuery('#slider').nivoSlider({ controlNav: false});	
+});
+jQuery(document).ready(function() {
+	"use strict";
+	jQuery('input.datepicker').Zebra_DatePicker();
+	// Carousel
+	jQuery("#carousel-type1").carouFredSel({
+		responsive: true,
+		width: '100%',
+		auto: false,
+		circular : false,
+		infinite : false, 
+			items: {visible: {min: 1,max: 4},
+		},
+		scroll: {
+			items: 1,
+			pauseOnHover: true
+		},
+		prev: {
+			button: "#prev2",
+			key: "left"
+		},
+		next: {
+			button: "#next2",
+			key: "right"
+		},
+		swipe: true
+	});
+	
+	jQuery(".work_slide ul").carouFredSel({
+		circular: false,
+		infinite: true,
+		auto: false,
+		scroll:{items:1},
+		items: {visible: {min: 3,max: 3}},
+		prev: {	button: "#slide_prev", key: "left"},
+		next: { button: "#slide_next",key: "right"}
+	});
+	jQuery("#testimonial_slide").carouFredSel({
+		circular: false,
+		infinite: true,
+		auto: false,
+		scroll:{items:1},
+		prev: {	button: "#slide_prev1", key: "left"},
+		next: { button: "#slide_next1",key: "right"}
+	});
+	
+	
+});  
+	
+</script>
+<!-- Initialize JS Plugins -->
+<script src="js/app-bottom-calls.js"></script>  
+
+<!-- End Main Wrapper -->
+
+
+<div style="left: -1000px; display: none;" class="Zebra_DatePicker"><table style="width: 218px;" class="dp_header"><tbody><tr><td style="-moz-user-select: none;" class="dp_previous">«</td><td style="-moz-user-select: none;" class="dp_caption">undefined, undefined</td><td style="-moz-user-select: none;" class="dp_next">»</td></tr></tbody></table><table class="dp_daypicker"><tbody><tr><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th><th>Su</th></tr><tr><td>NaN</td><td>NaN</td><td>NaN</td><td>NaN</td><td>NaN</td><td class="dp_weekend">NaN</td><td class="dp_weekend">NaN</td></tr><tr><td>NaN</td><td>NaN</td><td>NaN</td><td>NaN</td><td>NaN</td><td class="dp_weekend">NaN</td><td class="dp_weekend">NaN</td></tr><tr><td>NaN</td><td>NaN</td><td>NaN</td><td>NaN</td><td>NaN</td><td class="dp_weekend">NaN</td><td class="dp_weekend">NaN</td></tr><tr><td>NaN</td><td>NaN</td><td>NaN</td><td>NaN</td><td>NaN</td><td class="dp_weekend">NaN</td><td class="dp_weekend">NaN</td></tr><tr><td>NaN</td><td>NaN</td><td>NaN</td><td>NaN</td><td>NaN</td><td class="dp_weekend">NaN</td><td class="dp_weekend">NaN</td></tr><tr><td>NaN</td><td>NaN</td><td>NaN</td><td>NaN</td><td>NaN</td><td class="dp_weekend">NaN</td><td class="dp_weekend">NaN</td></tr></tbody></table><table style="width: 218px; height: 206px; display: none;" class="dp_monthpicker"></table><table style="width: 218px; height: 206px; display: none;" class="dp_yearpicker"></table><table style="width: 218px;" class="dp_footer"><tbody><tr><td class="dp_today" style="width: 100%;">Today</td><td class="dp_clear" style="width: 50%; display: none;">Clear date</td></tr></tbody></table></div></body>

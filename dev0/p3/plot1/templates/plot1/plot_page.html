@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- <link rel="stylesheet" href="style.css" />-->
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="excanvas.js"></script><![endif]-->
+    <script language="javascript" type="text/javascript" src="{% static "plot1/js/jquery.jqplot.min.js" %} "></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static "plot1/css/jquery.jqplot.min.css" %}" />
+
+
+
+
+    <title>Plot plot plot</title>
+</head>
+
+<body>
+    <p>hello</p>
+
+    <div id="chartdiv" style="height:400px;width:300px; ">
+        <p>hi</p>
+        <p>hi2</p>
+    </div>
+
+
+
+<!-- *******************Javascript - Data def**************** -->
+
+    <script type="text/javascript">
+
+    var graph_data1 ={{ graph_data1 }}
+    var graph_data2 ={{ graph_data2 }}
+    var graphs = [graph_data1,graph_data2 ]
+    </script>
+
+
+<!-- *******************Javascript - Graph**************** -->
+
+
+<script type="text/javascript" src="{% static "plot1/js/plot.js" %} "></script>
+    
+</body>
+</html>

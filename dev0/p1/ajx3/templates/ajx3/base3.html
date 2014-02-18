@@ -1,0 +1,79 @@
+
+
+<!-- ATTENTION  LA BASE.HTML EST DIRIGEE PAR TEMPLATE DIR, COMMUN AUX 2 APPS DONC DJANGO PREND LA PREMIERE DISPO... SOLUTION:
+    - LES RENOMMER
+    - SEPARER LES DONNEES
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Faire de l'AJAX avec Django</title>
+    <script type="text/javascript" src="/media/js/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+            // Code jQuery Ici
+    </script>
+</head>
+
+
+<body>
+    <div>
+        <h1>Test AJAX en GET</h1>
+        <p>Appeler la 1ère page en AJAX : <a href="/ajx3/test-get/?message=coucou" id="ajax1">Test Get</a></p>
+        <p id="reponse-get"></p>
+        <hr/>
+        <br/>
+    </div>
+
+
+    <div>
+        <h1>Test AJAX en POST</h1>
+        <p>Appeler la 2ème page en AJAX :
+        <form id="ajax2" action="/ajx3/test-post/" method="post">{% csrf_token %}
+            Nom : <input type="text" name="nom" value=""/><br/>
+            Prénom : <input type="text" name="prenom" value=""/><br/>
+            <input type="submit" value="Envoyer"/>
+        </form>
+        <p id="reponse-post"></p>
+    </div>
+
+
+
+    <script type="text/javascript">
+    // Code jQuery Ici
+        $(document).ready(function(){
+        
+        // Lien GET AJAX
+        $("#ajax1").click(function(e){
+            var lien = $(this).attr('href');
+            $('#reponse-get').fadeOut('fast', function(){
+                $('#reponse-get').load(lien, function() {
+                    $('#reponse-get').fadeIn('fast');
+                });
+            });
+            e.preventDefault()
+        });
+        
+        // Formulaire POST AJAX
+        $("#ajax2").submit( function() {
+            var urlSubmit = $(this).attr('action');
+            $.ajax({  
+                type: "POST",
+                url: urlSubmit,
+                data      : $(this).serializeArray(),
+                success: function(data) {
+                    $('#reponse-post').fadeOut('fast', function(){
+                        $('#reponse-post').html();
+                        $('#reponse-post').html(data);
+                        $('#reponse-post').fadeIn('fast');
+                    });
+                }
+            });
+            return false;
+        });
+        
+        });
+    </script>
+</body>
+</html>

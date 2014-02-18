@@ -1,0 +1,11 @@
+<h1>{{ city.ville }}</h1>
+
+{% if error_message %}
+<p><strong>AIE</strong></p>
+
+{% else %}
+
+<h2><strong>{{ city.nombre }}</strong></h2>
+
+{% endif %}
+<button><a href="{% url 'app1:index' %} "> Retour </a> </button>

@@ -1,0 +1,9 @@
+{% if city_list %}
+    <ul>
+    {% for city in city_list %}
+    	<li><a href="{% url 'app1:detail' city.ville %}">{{ city.ville }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No city are available.</p>
+{% endif %}

@@ -1,0 +1,1 @@
+Ajax Simple Get & Post
