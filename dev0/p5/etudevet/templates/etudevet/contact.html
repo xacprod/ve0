@@ -1,0 +1,57 @@
+{% extends "etudevet/base.html" %}
+{% load static %}
+
+{% block slider %}
+
+</div>
+
+<!-- Title bar --> 
+
+<div class="main-content-top">	
+	<div class="main-wrapper">	
+		<div class="row">
+			<div class="large-6 columns">
+				<h2>Contact</h2>
+			</div>        
+		</div>
+	</div>		
+</div>
+<!-- End of Title bar --> 
+<!-- Main content --> 
+
+<div class="main-wrapper">
+	<div class="content_wrapper">
+		<div class="row">
+			<div class="large-8 columns push-2">
+				<h5 class="contact_title">Contactez-nous</h5>				
+				<h5 class="subheader">Demande spéciale, questions...C'est ici!</h5>
+		        <div class="divider"><span></span></div>
+					<div id="status"></div>
+					<div class="contact_form">
+						<div class="row">
+							<form action="{% url 'p5:contact' %}" class="contactForm" method="POST">
+								{% csrf_token %}
+								{{ form.as_p }}
+								<input type="submit" value="Envoyer" />
+							</form>
+						</div>
+					</div>	
+			</div>
+		</div>
+	</div>		
+</div>
+	<div class="large-2 columns">
+	</div>
+<!-- End of Main content --> 
+
+
+{% endblock %}
+
+
+{% block action_on_slider %}
+
+{% endblock %}
+
+{% block price %}
+
+{% endblock %}

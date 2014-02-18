@@ -1,0 +1,32 @@
+<h1>{{city_chosen.nom_ville}} ({{city_chosen.departement}})</h1>
+{% if animals %}
+		<div class="main-wrapper">
+			<div class="row main-content"><!-- Main Content -->
+		    	<div class="large-12 columns">           
+		            <div class="row"><!-- Row -->
+		                <div class="large-9 push-3 columns">                        	
+		                    <div class="large-3 columns"><h5>Espèce</h5></div>
+		                    <div class="large-3 columns"><h5>Population</h5></div>
+		                    <div class="large-3 columns"><h5>Médicalisés</h5></div>
+		                    <div class="large-3 columns"><h5>Indice des Dépenses</h5></div>
+		                </div>   
+		                {% for animal in animals %}	
+		                <div class="large-9 push-3 columns">                        	
+		                    <div class="large-3 columns"><h3>{{animal.type_al}}</h3></div>
+		                    <div class="large-3 columns"><h3>{{animal.nombre_al}}</h3></div>
+		                    <div class="large-3 columns"><h3>{{animal.nombre_med}}</h3></div>
+		                    <div class="large-3 columns"><h3>{{city_chosen.depenses.indice}}€ (base 100)</h3></div>
+		                </div>
+		                </br>
+		                {% endfor %}
+		            </br>
+		  			</div><!-- End Row -->
+		        </div>
+			</div>
+		  <!-- End Main Content -->
+		</div>
+</br>
+	
+{% else %}
+    <p>Pas de données disponibles</p>
+{% endif %}

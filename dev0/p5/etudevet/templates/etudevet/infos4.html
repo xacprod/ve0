@@ -1,0 +1,69 @@
+{% extends "etudevet/base.html" %}
+{% load static %}
+
+{% block slider %}
+
+</div>
+
+<!-- Title bar --> 
+
+<div class="main-content-top">	
+	<div class="main-wrapper">	
+		<div class="row">
+			<div class="large-6 columns">
+				<h2>Questions fréquentes</h2>
+			</div>        
+		</div>
+	</div>		
+</div>
+<!-- End of Title bar --> 
+
+<!-- Main content --> 
+
+<div class="main-wrapper">
+	<div class="content_wrapper">
+		<div class="row">
+			<div class="large-10 columns">
+				<article class="post single-post">
+					<div class="large-12 columns">
+						</br>
+						<h2>Qui a créé Etudevet?</h2>
+						<div class="divline"><span></span></div>
+						<p class="post_text">Etudevet est née des besoins d'un vétérinaire et d'un cabinet d'études spécialisé dans les études de marché depuis plus de 15 ans dans le monde du commerce.</p>
+					</div>
+					<div class="large-12 columns">
+						</br>
+						<h2>Je ne trouve pas ma ville?</h2>
+						<div class="divline"><span></span></div>
+						<p class="post_text">Plusieurs raisons peuvent expliquer une absence. Il y a plus de 36 000 communes en France. On retrouve parfois différents noms pour une même commune au cours du temps. L’algorithme utilise plusieurs tables avec des dates de création différentes. Dans le cas où les informations, ne concordent pas, elle ne figure pas. Mais il se peut que l'absence soit un simple oubli. Le mieux est encore de nous demander, <a href="{% url 'p5:contact' %} ">envoyez-nous un mail !</a></p>
+					</div>
+					<div class="large-12 columns">
+						<h2>J'ai une demande spécifique</h2>
+						<div class="divline"><span></span></div>
+						<p class="post_text">Etudevet est conçu pour répondre aux besoins les plus courants. Pour une demande spécifique,<a href="{% url 'p5:contact' %} "> écrivez-nous.</a></p>
+</p>
+					</div>
+					<div class="large-12 columns">
+						<h2>J'ai l'impression qu'il y une erreur</h2>
+						<div class="divline"><span></span></div>
+						<p class="post_text">Le modèle est construit sur plusieurs tables, plusieurs millions de caractères. Malgré tous nos contrôles, des erreurs peuvent s’être glissées lorsque nous rédigeons l'approche. En cas de doute, n’hésitez pas à <a href="{% url 'p5:contact' %}"> revenir vers nous</a></p>
+					</div>
+				</article>
+
+			</div>
+		</div>
+	</div>           
+</div>
+<!-- End of Main content --> 
+
+
+{% endblock %}
+
+
+{% block action_on_slider %}
+
+{% endblock %}
+
+{% block price %}
+
+{% endblock %}

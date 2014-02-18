@@ -1,0 +1,10 @@
+{% if villes_possibles.count > 0 %}
+<ul style="font-size:1.2em; position: absolute; left: 3em; top: 6em; border: 1px solid #B0B0B0;background-color: #FFFFFF; padding-left:1.5em; padding-right:1.5em;" >
+{% for ville in villes_possibles %}
+	<li class="city_found" id="{{ville.id}}"><h3> {{ville.nom_ville}}</h3> </li>
+{% endfor %}
+</ul>
+{% else %}
+<li>Cette ville n'existe pas (chez nous...) :( </li>
+</ul>
+{% endif %}

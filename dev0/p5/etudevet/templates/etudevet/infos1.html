@@ -1,0 +1,79 @@
+{% extends "etudevet/base.html" %}
+{% load static %}
+
+{% block slider %}
+
+</div>
+
+<!-- Title bar --> 
+
+<div class="main-content-top">	
+	<div class="main-wrapper">	
+		<div class="row">
+			<div class="large-6 columns">
+				<h2>Méthode Etudevet</h2>
+			</div>        
+		</div>
+	</div>		
+</div>
+<!-- End of Title bar --> 
+
+<!-- Main content --> 
+
+<div class="main-wrapper">
+	<div class="content_wrapper">
+		<div class="row">
+			<div class="large-10 columns">
+				<article class="post single-post">
+
+					<div class="large-12 columns">
+						<h2>L'idée Etudevet</h2>
+						<div class="divline"><span></span></div>
+						<p class="post_text">L’idée fondatrice de Etudevet est de fournir aux professionnels du monde vétérinaires les mêmes outils  géomarketing que les professionnels du retail. Le modèle que nous utilisons a été conçu par un cabinet d’étude professionnel spécialiste du retail.</p>
+					</div>
+					<div class="large-12 columns">
+						<h2>Principe du modèle Etudevet</h2>
+						<div class="divline"><span></span></div>
+						<p class="post_text">Le modèle Etudevet fonctionne en 2 temps: </p>
+						<ol>
+							<li>L'estimation de la population d'animaux médicalisés</li>
+							<p>Les populations canine et féline médicalisées. Nous ne prenons pas en compte les NACs (données insuffisamment documentées), ni la pratique rurale.</p>
+							<li>L'estimation des dépenses par animal</li>
+							<p>Les dépenses en fonction du profil de la population.</p>
+						</ol>
+						<p class="post_text"><a href="{% url 'p5:infos2' %} ">Plus d'infos sur les paramètres pris en compte</a></p>
+
+					</div>
+					<div class="large-12 columns">
+						<h2>Forces et Faiblesses du modèle</h2>
+						<div class="divline"><span></span></div>
+						<p class="post_text">La principale force de l’algorithme est le nombre de paramètres pris en compte. Par exemple, le modèle prend non seulement en compte le revenu de la population locale mais leur répartition par tranches de revenus. Pourquoi cette approche? Car un client à faibles revenus et un client à hauts revenus ne consomment pas des soins vétérinaires comme 2 clients à revenus moyens.
+						</br></br> Les faiblesses du modèle sont essentiellement la qualité des sources. Les statistiques du secteur vétérinaire sont peu nombreuses ou datent parfois. Par ailleurs, les villes de mois de 3 000h ne donne pas lieu à études (les données Insee sont incomplètes).</p>
+						<p class="post_text"><a href="{% url 'p5:infos2' %} ">Plus d'infos sur les paramètres pris en compte</a></p>
+
+					</div>
+					<div class="large-12 columns">
+						<h2>Les données sources</h2>
+						<div class="divline"><span></span></div>
+						<p class="post_text">La source principale de données est l’Insee. Des documentations officielles (ONV, études sur les professions libérales, données secteurs) complètent ces données.</p>
+					</div>
+
+				</article>
+
+			</div>
+		</div>
+	</div>           
+</div>
+<!-- End of Main content --> 
+
+
+{% endblock %}
+
+
+{% block action_on_slider %}
+
+{% endblock %}
+
+{% block price %}
+
+{% endblock %}

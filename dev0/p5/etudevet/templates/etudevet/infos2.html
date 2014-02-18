@@ -1,0 +1,73 @@
+{% extends "etudevet/base.html" %}
+{% load static %}
+
+{% block slider %}
+
+</div>
+
+<!-- Title bar --> 
+
+<div class="main-content-top">	
+	<div class="main-wrapper">	
+		<div class="row">
+			<div class="large-6 columns">
+				<h2>Paramètres utilisés</h2>
+			</div>        
+		</div>
+	</div>		
+</div>
+<!-- End of Title bar --> 
+
+<!-- Main content --> 
+
+<div class="main-wrapper">
+	<div class="content_wrapper">
+		<div class="row">
+			<div class="large-10 columns">
+				<article class="post single-post">
+					<h4>De nombreux paramètres sont utilisés dans nos estimations, en voici les principaux:</h4>
+					<div class="large-12 columns">
+						</br>
+						<h2>Foyers et populations</h2>
+						<div class="divline"><span></span></div>
+						<p class="post_text">Donnée fondamentale, la population est la base de notre étude. </p>
+					</div>
+					<div class="large-12 columns">
+						<h2>Type de logement</h2>
+						<div class="divline"><span></span></div>
+						<p class="post_text">Le type de logement influe sur notamment sur le taux de possession animal et le profil d'animaux possédés. </p>
+					</div>
+					<div class="large-12 columns">
+						<h2>Zones rurales ou urbaines</h2>
+						<div class="divline"><span></span></div>
+						<p class="post_text"> Nous prenons en compte le profil urbain ou rural de la zone, facteur clé de la médicalisation. Pour avoir une lecture réelle de l'urbanisation, nous travaillons par zones pour ce paramètre (et non par commune).</p>
+					</div>
+					<div class="large-12 columns">
+						<h2>Répartition des revenus</h2>
+						<div class="divline"><span></span></div>
+						<p class="post_text">Le revenu influe sur les dépenses vétérinaires de façon non linéaire. Cela veut dire qu'une personne avec 2 fois plus de revenus ne dépensent pas 2 fois plus pour ses animaux. Nous prenons aussi en compte chaque tranche de la population pour fournir un indice des dépenses.</p>
+					</div>
+					<div class="large-12 columns">
+						<h2>Dépenses moyenne par animal médicalisé</h2>
+						<div class="divline"><span></span></div>
+						<p class="post_text">Difficile à estimer au niveau national, nous avons fixé ce paramètre 125€ par an par animal en tenant compte des dernières informations disponibles et de l'inflation. </br> Ce paramètre est le seul modifiable (au moment de votre commande).</p>
+					</div>
+				</article>
+
+			</div>
+		</div>
+	</div>           
+</div>
+<!-- End of Main content --> 
+
+
+{% endblock %}
+
+
+{% block action_on_slider %}
+
+{% endblock %}
+
+{% block price %}
+
+{% endblock %}

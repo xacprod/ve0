@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- <link rel="stylesheet" href="style.css" />-->
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+    <!--NB => Dirige depuis settings.py-->
+    <script type="text/javascript" src="{% static "etudevet/js/ajaxsearch.js" %} "></script>	
+</head>
+
+
+<form action="{% url 'p5:home2' %}" method="post" autocomplete="off">
+{% csrf_token %}
+<input type="text" id="search" name="ville_choisie" >
+<input type="submit" value="envoyer"/>
+</form>
+
+<p class="test">clickme</p>
+
+
+
+<ul id ="search-results"></ul>
+
+<ul id ="city-display"></ul>
+
+
+
+
+</br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br>
+
+<ul>
+{% for i in data %}
+<li><p>{{i.nom_ville}} ({{i.departement.nom_departement}})</p>{{i.pop_ville}}  </li>
+{% endfor %}
+</ul>
+
