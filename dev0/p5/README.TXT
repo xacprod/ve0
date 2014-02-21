@@ -1,17 +1,14 @@
 P5 : ETUDE VET
 
-08.02.14
-MEP Bases
-
-
+18.02.14
+Installation South
 
 TODO
 __________________________________________
 
-Contact Form
+MAil perso + joli mail client
 Order page
 Paypal
-Mailing confirmation
 
 Inline
 BDD

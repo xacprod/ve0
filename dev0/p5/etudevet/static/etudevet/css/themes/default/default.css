@@ -89,7 +89,7 @@ Supports Thumbs: true
 	text-transform:uppercase;
 }
 .nivo-caption{opacity:1; text-align:center}
-.nivo-caption p.nivotitle{background:url('../../../images/nivo_bg.png'); margin:20px auto; padding:10px 20px; font-size:36px; color:#fff; margin-bottom:10px;  font-family: 'Open Sans', sans-serif; display:inline-block}
+/*.nivo-caption p.nivotitle{background:url('../../../images/nivo_bg.png'); margin:20px auto; padding:10px 20px; font-size:36px; color:#fff; margin-bottom:10px;  font-family: 'Open Sans', sans-serif; display:inline-block}*/
 .nivo-caption p.nivotitle.v1{font-size:1.4em;}
 .nivo-caption p.nivotitle.v2{font-size:2em; background:#278ad8; }
 .nivo-caption p.nivotitle.v3{background:#25c9da; font-size:1.4em; letter-spacing:2px}

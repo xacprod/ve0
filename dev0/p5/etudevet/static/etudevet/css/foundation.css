@@ -4518,19 +4518,15 @@ a.th {
 
 /* Tooltips */
 .has-tip {
-  border-bottom: dotted 1px #cccccc;
-  cursor: help;
-  font-weight: bold;
-  color: #333333; }
+  color: white; }
   .has-tip:hover, .has-tip:focus {
-    border-bottom: dotted 1px #196177;
     color: #2ba6cb; }
   .has-tip.tip-left, .has-tip.tip-right {
     float: none !important; }
 
 .tooltip {
-  display: none;
-  position: absolute;
+  display: inline;
+  position:absolute;
   z-index: 999;
   font-weight: bold;
   font-size: 0.9375em;
@@ -4540,7 +4536,7 @@ a.th {
   left: 50%;
   width: 100%;
   color: white;
-  background: black;
+  background: #25c9da;
   -webkit-border-radius: 3px;
   border-radius: 3px; }
   .tooltip > .nub {
