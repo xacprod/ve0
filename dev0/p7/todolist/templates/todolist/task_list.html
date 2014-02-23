@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+	<title> Todo List</title>
+	<link rel="stylesheet" href="static/app.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+<div id="container">
+		<h2> Todo List</h2>
+	{% for item in items %}
+	  <div class="item">
+	    {{ item.name }}
+	    <a class="close" href="/todolist/remove/{{item.id}}/">X</a>
+	  </div>
+	{% endfor %}
+
+	<form action="/todolist/add/" method="post" class="form-inline new-item">
+	 {% csrf_token %}
+	 <input type="text" name= "task" placeholder="Example: Go to the gym" />
+	 <input type="submit" class="btn btn-info" value="Add Item" id="submitbutton"/>
+	</form>
+</div>
+
+</body>
+</html>
